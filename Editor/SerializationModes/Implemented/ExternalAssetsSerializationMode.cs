@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
+using Depra.SerializedReference.Dropdown.Runtime;
 using Plugins.ComfyGoogleSheets.Runtime;
-using Sirenix.Utilities;
 using UnityEditor;
 using Object = UnityEngine.Object;
 
 namespace Plugins.ComfyGoogleSheets.Editor.SerializationModes.Implemented
 {
     [Serializable]
+    [SubtypeMenuAlias(nameof(ExternalAssetsSerializationMode))]
     public class ExternalAssetsSerializationMode : BaseTableRowSerializationMode
     {
         protected override bool CanSerializeToRowInternal(Object asset)

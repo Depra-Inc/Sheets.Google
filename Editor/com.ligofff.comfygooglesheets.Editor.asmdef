@@ -2,7 +2,8 @@
     "name": "com.ligofff.comfygooglesheets.Editor",
     "rootNamespace": "",
     "references": [
-        "GUID:f07f409bb3961a04b970052fe25e0b80"
+        "GUID:f07f409bb3961a04b970052fe25e0b80",
+        "GUID:47f3b0f3b769b274483ca3dcb73bde9e"
     ],
     "includePlatforms": [
         "Editor"

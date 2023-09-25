@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Linq;
 using System.Reflection;
+using Depra.SerializedReference.Dropdown.Runtime;
+using Depra.Sheets.Google.Editor.Extensions;
 using Plugins.ComfyGoogleSheets.Runtime;
-using Sirenix.Utilities;
 using Object = UnityEngine.Object;
 
 namespace Plugins.ComfyGoogleSheets.Editor.SerializationModes.Implemented
 {
     [Serializable]
+    [SubtypeMenuAlias(nameof(AttributeSerializationMode))]
     public class AttributeSerializationMode : BaseTableRowSerializationMode
     {
         protected override bool CanSerializeToRowInternal(Object asset)
